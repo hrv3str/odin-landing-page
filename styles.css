@@ -44,3 +44,26 @@ width: 100%;
     gap: 16px;
     padding: 0;
 }
+
+.head-sec {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 45%;
+}
+
+.odin-project img{
+    width: 20px;
+}
+
+.odin-project {
+    display:flex;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.odin-project:hover {
+    background-color: rgba(137, 43, 226, 0.377);
+    cursor: pointer;
+}

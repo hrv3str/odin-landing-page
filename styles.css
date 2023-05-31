@@ -1,6 +1,7 @@
 :root {
     --font-color-main: black;
     --background-color-main: white;
+    --borders-color: black;
 }
 
 * {
@@ -33,7 +34,7 @@ width: 100%;
 .logo {
     width: 60px;
     height: fit-content;
-    border: 2px solid black;
+    border: 2px solid var(--borders-color);
     border-radius: 15px;
     margin-right: auto;
 }
@@ -45,11 +46,16 @@ width: 100%;
     padding: 0;
 }
 
+.nav-menu li {
+    border: 3px solid var(--borders-color);
+    border-radius: 20px;
+    padding: 5px;
+}
+
 .head-sec {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    flex-basis: 45%;
 }
 
 .odin-project img{
@@ -63,7 +69,20 @@ width: 100%;
     border-radius: 20px;
 }
 
-.odin-project:hover {
+.odin-project:hover,
+.nav-menu li:hover {
     background-color: rgba(137, 43, 226, 0.377);
     cursor: pointer;
+}
+
+.head-img img {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.head-text, .head-img {
+    flex-grow: 1;
+    width: 45%;
 }

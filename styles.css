@@ -22,6 +22,7 @@ body {
     padding: none;
     width: auto;
     margin: none;
+    ;
 }
 
 header {
@@ -29,11 +30,15 @@ display: flex;
 justify-content: flex-end;
 align-items: center;
 width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+max-height: 80px;
 }
 
 .logo {
     width: 60px;
-    height: fit-content;
+    height: 60px;
     border: 2px solid var(--borders-color);
     border-radius: 15px;
     margin-right: auto;
@@ -65,6 +70,10 @@ h1 {
     justify-content: space-around;
 }
 
+.head-sec {
+    margin-top: 65px;
+}
+
 .odin-project img{
     width: 20px;
 }
@@ -72,8 +81,9 @@ h1 {
 .odin-project {
     display:flex;
     align-items: center;
-    border: 3px solid black;
+    border: 3px solid var(--borders-color);
     border-radius: 20px;
+    align-self: center;
 }
 
 .odin-project:hover,
@@ -83,15 +93,22 @@ h1 {
 }
 
 .head-img img {
-    border: 1px solid black;
+    border: 1px solid var(--borders-color);
     border-radius: 20px;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
+    margin: 10px;
 }
 
 .head-text, .head-img {
     flex-grow: 1;
     width: 45%;
+}
+
+.head-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .head-text {

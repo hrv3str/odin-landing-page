@@ -2,6 +2,7 @@
     --font-color-main: black;
     --background-color-main: white;
     --borders-color: black;
+    --message-color: #3882f6;
 }
 
 * {
@@ -54,10 +55,13 @@ background-color: var(--background-color-main);
     padding: 0;
 }
 
-.nav-menu li {
+.nav-menu li,
+.mount-links li {
     border: 3px solid var(--borders-color);
     border-radius: 20px;
-    padding: 5px;
+    padding: 3px;
+    text-align: center;
+    background-color: var(--background-color-main);
 }
 
 h1 {
@@ -91,7 +95,8 @@ h1 {
 }
 
 .odin-project:hover,
-.nav-menu li:hover {
+.nav-menu li:hover,
+.mount-links li:hover {
     background-color: rgba(137, 43, 226, 0.377);
     cursor: pointer;
 }
@@ -142,4 +147,29 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+}
+
+.sign-mes {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid var(--borders-color);
+    background-color: var(--message-color);
+}
+
+.mount-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.mount-links ul {
+    padding: 0;
+}
+
+.mount-links li {
+    margin: 5px 0;
 }

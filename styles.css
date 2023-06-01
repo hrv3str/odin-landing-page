@@ -34,6 +34,7 @@ position: fixed;
 top: 0;
 left: 0;
 max-height: 80px;
+background-color: var(--background-color-main);
 }
 
 .logo {
@@ -42,6 +43,8 @@ max-height: 80px;
     border: 2px solid var(--borders-color);
     border-radius: 15px;
     margin-right: auto;
+    margin-left: 15px;
+    padding: 10px;
 }
 
 .nav-menu {
@@ -68,6 +71,7 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    gap: 16px;
 }
 
 .head-sec {
@@ -121,4 +125,21 @@ h1 {
 .head-text h1,
 .head-text p {
     margin: 5px;
+}
+
+.card-img {
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid var(--borders-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
 }
